@@ -1,13 +1,4 @@
 import telebot
-import json
-import math
-
-import requests
-
-from DaisyX.decorator import register
-
-from .utils.disable import disableable_dec
-from .utils.message import get_args_str
 
 API_KEY = "5299193377:AAHEGIBIqtPeqVcnJ6GiQcteofe0W4GrmF8"
 
@@ -25,14 +16,6 @@ def send_start(inf):
     bot.reply_to(inf,"Basically @zoro_to made this bot to test new codes and run it ")
 
 
-@register(cmds=["math", "simplify"])
-@disableable_dec("math")
-async def _(message):
-    args = get_args_str(message)
-    response = requests.get(f"https://newton.now.sh/api/v2/simplify/{args}")
-    c = response.text
-    obj = json.loads(c)
-    j = obj["result"]
-    await message.reply(j)
+
 
 bot.polling()
