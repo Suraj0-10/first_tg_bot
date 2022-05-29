@@ -1,2 +1,3 @@
 pytelegrambotapi
 pyshorteners
+pyrogram==1.4.16
