@@ -1,6 +1,6 @@
 import telebot
 
-API_KEY = "5299193377:AAHEGIBIqtPeqVcnJ6GiQcteofe0W4GrmF8"
+API_KEY = "5261660867:AAE6JWmiwg65idb0KR0tuyyHwpeNGpDprBQ"
 
 bot = telebot.TeleBot(API_KEY,parse_mode=None)
 @bot.message_handler(commands=["start"])
