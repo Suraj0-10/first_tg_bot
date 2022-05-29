@@ -15,13 +15,5 @@ def send_start(hlp):
 def send_start(inf):
     bot.reply_to(inf,"Basically @zoro_to made this bot to test new codes and run it ")
 
-N1 = 1
-N2 = 3
-Sum = N1 + N2
-print(sum)
-@bot.message_handler(commands=["sum"])
-def send_start(inf):
-    bot.reply_to(inf,"sum")
-
 
 bot.polling()
