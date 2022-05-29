@@ -23,4 +23,12 @@ def send_start(inf):
 def send_start(inf):
     bot.reply_to(inf,"thanks @anime_in_30mb for this amazing channel\nI hope u do well in exams @Assassin_Aj")
 
+@bot.message_handler(filters.incoming & filters.command(["ping"]))
+    async def up(bot, message):
+      stt = dt.now()
+      ed = dt.now()
+      v = ts(int((ed - uptime).seconds) * 1000)
+      ms = (ed - stt).microseconds / 1000
+      p = f"🌋Pɪɴɢ = {ms}ms"
+      await message.reply_text(v + "\n" + p)
 bot.polling()
