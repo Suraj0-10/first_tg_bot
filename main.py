@@ -17,9 +17,6 @@ def send_start(inf):
 
 @bot.message_handler(commands=["/sagar"])
 def send_start(inf):
-    bot.reply_to(inf,"[29/05, 7:24 pm] Sagar: Eno nindhu
-[29/05, 7:24 pm] Sagar: En madtha udya
-[29/05, 7:24 pm] Sagar: Idya*
-[29/05, 7:24 pm] Sagar: Yalla odbuta")
+    bot.reply_to(inf,"Eno nindhu\nEn madtha udya\nIdya*\nYalla odbuta")
 
 bot.polling()
