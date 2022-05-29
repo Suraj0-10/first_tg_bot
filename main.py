@@ -1,19 +1,13 @@
-import telebot
+import asyncio
+from pyrogram import Client
 
-API_KEY = "5299193377:AAHEGIBIqtPeqVcnJ6GiQcteofe0W4GrmF8"
-
-bot = telebot.TeleBot(API_KEY,parse_mode=None)
-@bot.message_handler(commands=["start"])
-def send_start(strt):
-    bot.reply_to(strt,"Hey! I'm a test or Practice bot of @Zoro_to\nYou can try out my commands\n/help\n/info\n/start")
-
-@bot.message_handler(commands=["help"])
-def send_start(hlp):
-    bot.reply_to(hlp,"There's nothing to help ask @zoro_to he may help u")
-
-@bot.message_handler(commands=["info"])
-def send_start(inf):
-    bot.reply_to(inf,"Basically @zoro_to made this bot to test new codes and run it ")
+api_id = 5168062
+api_hash = "04c049aa96d1cc87920b45b7fb43c0d0"
 
 
-bot.polling()
+async def main():
+    async with Client("my_account", api_id, api_hash) as app:
+        await app.send_message("me", "Greetings from Pyrogram!")
+
+
+asyncio.run(main())
