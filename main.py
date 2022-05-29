@@ -21,6 +21,6 @@ def send_start(inf):
 
 @bot.message_handler(commands=["aj"])
 def send_start(inf):
-    bot.reply_to(inf,"thanks @anime_in_30mb for this amazing channel\nI hope u do well in exams @Assasin_Aj")
+    bot.reply_to(inf,"thanks @anime_in_30mb for this amazing channel\nI hope u do well in exams @Assassin_Aj")
 
 bot.polling()
