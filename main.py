@@ -15,8 +15,8 @@ def send_start(hlp):
 def send_start(inf):
     bot.reply_to(inf,"Basically @zoro_to made this bot to test new codes and run it ")
 
-@bot.message_handler(commands=["sagar"])
+@bot.message_handler(commands=["text"])
 def send_start(inf):
-    bot.reply_to(inf,"Eno nindhu\nEn madtha udya\nIdya*\nYalla odbuta")
+    bot.reply_to(inf,"none")
 
 bot.polling()
