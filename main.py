@@ -1,4 +1,5 @@
 import asyncio
+import pyrogram 
 from pyrogram import Client
 
 api_id = 5168062
