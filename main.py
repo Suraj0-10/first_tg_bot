@@ -27,8 +27,8 @@ def channel(bot,message):
   text = text,
   reply_markup = reply_markup,
   )
-@bot.on_message(filters.text)
-def cmd1(client,message):
- message.reply_text(message.text)
-print("started")
+#@bot.on_message(filters.text)
+#def cmd1(client,message):
+ #message.reply_text(message.text)
+#print("started")
 bot.run()
