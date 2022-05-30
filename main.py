@@ -28,7 +28,7 @@ def channel(bot,message):
   reply_markup = reply_markup,
   )
 #welcome message
-GROUP = "Animerequest_group,-100683064230"
+GROUP = "-1001662127173"
 WLCM = "Hey! Welcome to my group!😳"
 @bot.on_message(filters.chat(GROUP) & filters.new_chat_members)
 def welcome(client, message):
