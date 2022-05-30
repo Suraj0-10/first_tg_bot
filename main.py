@@ -27,6 +27,12 @@ def channel(bot,message):
   text = text,
   reply_markup = reply_markup,
   )
+#welcome message
+GROUP = "Animerequest_group"
+WLCM = "Hey! Welcome to my group!😳"
+@bot.on_message(filters.chat(GROUP) & filters.new_chat_members)
+def welcome(client, message):
+   message.reply_text(WLCM)
 #@bot.on_message(filters.text)
 #def cmd1(client,message):
  #message.reply_text(message.text)
